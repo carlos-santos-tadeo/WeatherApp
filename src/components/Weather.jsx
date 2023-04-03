@@ -13,10 +13,10 @@ const Weather = ({ weather, temp }) => {
   return (
     <div>
       <section className='text-xl'>
-        <h2  className='bg-cyan-400/20 rounded-3xl py-2 px-2 text-center mb-4 font-bold text-[25px] tracking-wider sm:text-[35px]'>{weather.name}, {weather.sys.country}</h2>
+        <h2  className='bg-slate-300/50 rounded-3xl py-2 px-2 text-red-950	 text-center mb-4 font-bold text-[25px] tracking-wider sm:text-[35px]'>{weather.name}, {weather.sys.country}</h2>
         {/* sm es media */}
         <section className='grid gap-4 sm:grid-cols-two'>
-          <article className='bg-slate-300/70 rounded-3xl grid grid-cols-2 justify-items-center items-center py-2 sm:grid-cols-1'>
+          <article className='bg-slate-300/50 rounded-3xl grid grid-cols-2 justify-items-center items-center py-2 sm:grid-cols-1'>
             <h3 className='capitalize text-lg col-start-1 col-end-3 '>{weather.weather[0].description}</h3>
 
             <h2 className='text-[45px] font-light sm:text-6xl'>{isCelsius ? `${temp.celsius}°C` : `${temp.farenheit}°F`}</h2>
@@ -26,7 +26,7 @@ const Weather = ({ weather, temp }) => {
             </div>
           </article>
 
-          <article className='bg-slate-300/70 rounded-3xl grid grid-cols-3 justify-center justify-items-stretch py-2 sm:grid-cols-1 sm:px-2 sm:py-0'>
+          <article className='bg-slate-300/50 rounded-3xl grid grid-cols-3 justify-center justify-items-stretch py-2 sm:grid-cols-1 sm:px-2 sm:py-0'>
             <div className='flex text-base justify-center items-center'>
               <div><img src="/images/speed.png" alt="" /></div>
               <h5>{weather.wind.speed} m/s</h5>
