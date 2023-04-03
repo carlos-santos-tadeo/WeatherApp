@@ -1,0 +1,84 @@
+.imgLoading{
+  width: 150px;
+  height: 70px;
+  background-image: url(/public/images/cloud.png);
+  background-size: 100% 100%;
+  animation: movimiento1 5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes movimiento1 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 20%;
+  }
+}
+
+
+/* en caso de falla jalar de internet */
+
+.textLoading{
+  width: 250px;
+  height: 50px;
+  background-size: 100% 100%;
+  animation: movimiento2 5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes movimiento2 {
+  from {
+    margin-bottom: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .imgLoading{
+    width: 320px;
+    height: 170px;
+    background-image: url(/public/images/cloud.png);
+    background-size: 100% 100%;
+    animation: movimiento1 5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes movimiento1 {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 20%;
+    }
+  }
+  
+
+  .textLoading{
+    width: 520px;
+    height: 90px;
+    background-size: 100% 100%;
+    animation: movimiento2 5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes movimiento2 {
+    from {
+      margin-top: 100%;
+    }
+    to {
+      margin-right: 0;
+    }
+  }
+  
+}
