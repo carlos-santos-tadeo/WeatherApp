@@ -8,15 +8,6 @@ import './App.css'
 
 function App() {
 
-  const [loading, setLoading] = useState(false)
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
-
   const [coords, setCoords] = useState()
   const [weather, setWeather] = useState()
   const [temp, setTemp] = useState()
@@ -59,6 +50,14 @@ function App() {
     }
   }, [coords])
 
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault()
