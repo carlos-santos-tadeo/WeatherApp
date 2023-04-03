@@ -94,8 +94,8 @@ function App() {
         ) : (
           <div className=" grid place-content-center min-h-screen bg-[url(/images/bg1.jpg)] bg-cover px-2">
             <form onSubmit={handleSubmit} className='flex justify-center gap-2 py-4'>
-              <input id='textSearch' className='bg-slate-300/30 border-[1px] border-black rounded-md p-2' type="text" />
-              <button className='bg-red-500 p-2 text-white rounded-md'>Search</button>
+              <input id='textSearch' placeholder='Buscar el clima en otra ciudad' className='placeholder-black w-60 bg-slate-300/30 border-[1px] border-black rounded-md p-2 sm:w-[350px] sm:text-[22px] sm:placeholder-gray-600' type="text" />
+              <button className='bg-red-950 font-bold p-2 text-white rounded-md sm:text-[20px]'>Search</button>
 
             </form>
            { weather ? (
